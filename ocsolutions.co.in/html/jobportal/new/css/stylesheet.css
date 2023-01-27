@@ -5326,3 +5326,67 @@ nav>div a.nav-item.nav-link.active {
 	system: fixed;
 	suffix: " ";
 }
+nav>.nav.nav-tabs {
+	border: none;
+	color: #fff;
+	background: #272e38;
+	border-radius: 0;
+}
+
+nav>div a.nav-item.nav-link,
+nav>div a.nav-item.nav-link.active {
+	border: none;
+	padding: 18px 25px;
+	color: #fff;
+	background: #272e38;
+	border-radius: 0;
+}
+
+nav>div a.nav-item.nav-link.active:after {
+	content: "";
+	position: relative;
+	bottom: -60px;
+	left: -10%;
+	border: 15px solid transparent;
+	border-top-color: #e74c3c;
+}
+
+.tab-content {
+	background: #fdfdfd;
+	line-height: 25px;
+	border: 1px solid #ddd;
+	border-top: 5px solid #e74c3c;
+	border-bottom: 5px solid #e74c3c;
+	padding: 30px 25px;
+}
+
+nav>div a.nav-item.nav-link:hover,
+nav>div a.nav-item.nav-link:focus {
+	border: none;
+	background: #e74c3c;
+	color: #fff;
+	border-radius: 0;
+	transition: background 0.20s linear;
+}
+
+.fixsize-class {
+	max-height: 100% !important;
+	max-width: 100% !important;
+}
+
+@media (max-width: 425px) {
+	.newrow {
+		display: flex !important;
+		flex-direction: column;
+	}
+}
+
+.tabination-section {
+	margin-top: 96px !important;
+	margin-bottom: 96px !important;
+
+}
+.tab-content>.active {
+    display: block;
+    height: auto;
+}
