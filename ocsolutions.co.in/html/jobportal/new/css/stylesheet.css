@@ -5200,52 +5200,129 @@ nav>div a.nav-item.nav-link.active {
 	background: #272e38;
 	border-radius: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+ :root {
+	 --color-bg: #eeedeb;
+	 --color-title: #0e1c4e;
+	 --color-summary-1: #fff6ee;
+	 --color-summary-1-highlight: #ffc48b;
+	 --color-summary-2: #fafaff;
+	 --color-summary-2-highlight: #b4b3ff;
+	 --color-summary-3: #fff0f3;
+	 --color-summary-3-highlight: #ffb3c0;
+	 --font-ibm-plex-sans: 'IBM Plex Sans', sans-serif;
+}
 
-nav>div a.nav-item.nav-link.active:after {
-	content: "";
+
+   .card {
+	background: white;
+	padding: 38px 36px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border-radius: 4px;
+	box-shadow: 0 8px 10px rgba(0, 0, 0, .1);
+	width: 100%;
+	padding: 100px 0;
+}
+.card h1 {
+	font-family: var(--font-ibm-plex-sans);
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.2;
+	color: var(--color-title);
+	margin-bottom: 20px;
+}
+.card details {
+	display: flex;
+	border-radius: 5px;
+	overflow: hidden;
+	background: rgba(0, 0, 0, .05);
+	border-left: 15px solid gray;
+	padding: 15px;
+}
+.card details {
+	margin-top: 15px;
+}
+.card details.warning {
+	--highlight: var(--color-summary-1-highlight);
+	background: var(--color-summary-1);
+	border-left-color: var(--color-summary-1-highlight);
+}
+.card details.warning p {
+	list-style-type: corona-warning;
+}
+.card details.info {
+	--highlight: var(--color-summary-2-highlight);
+	background: var(--color-summary-2);
+	border-left-color: var(--color-summary-2-highlight);
+}
+.card details.info p {
+	list-style-type: corona-info;
+}
+.card details.alert {
+	--highlight: var(--color-summary-3-highlight);
+	background: var(--color-summary-3);
+	border-left-color: var(--highlight);
+}
+.card details.alert p {
+	list-style-type: corona-alert;
+}
+.card details summary, .card details p {
 	position: relative;
-	bottom: -60px;
-	left: -10%;
-	border: 15px solid transparent;
-	border-top-color: #e74c3c;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: flex-start;
+	font-family: var(--font-ibm-plex-sans);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: var(--color-title);
+	padding: 20px;
+	cursor: pointer;
 }
-
-.tab-content {
-	background: #fdfdfd;
-	line-height: 25px;
-	border: 1px solid #ddd;
-	border-top: 5px solid #e74c3c;
-	border-bottom: 5px solid #e74c3c;
-	padding: 30px 25px;
+.card details summary::-webkit-details-marker, .card details p::-webkit-details-marker {
+	display: none;
 }
-
-nav>div a.nav-item.nav-link:hover,
-nav>div a.nav-item.nav-link:focus {
-	border: none;
-	background: #e74c3c;
-	color: #fff;
-	border-radius: 0;
-	transition: background 0.20s linear;
+.card details summary:focus, .card details p:focus {
+	outline: solid 3px var(--highlight);
 }
-
-.fixsize-class {
-	max-height: 100% !important;
-	max-width: 100% !important;
+.card details summary::selection, .card details p::selection {
+	background-color: var(--highlight);
 }
-
-@media (max-width: 425px) {
-	.newrow {
-		display: flex !important;
-		flex-direction: column;
-	}
+.card details p {
+	display: list-item;
+	cursor: default;
+	margin-left: 3rem;
+	list-style-type: corona;
 }
-
-.tabination-section {
-	margin-top: 5px !important;
-	margin-bottom: 10px !important;
-
+.card details summary::before {
+	cursor: pointer;
+	position: absolute;
+	display: inline-flex;
+	width: 1rem;
+	height: 1rem;
+	left: 0rem;
+	margin-right: 0.5rem;
+	content: url("data:image/svg+xml,%3Csvg width='100%' height='100%' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.6066 12H1.3934' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 1.39343V22.6066' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
-.tab-content>.active {
-    display: block;
-    height: auto;
+.card details[open] summary {
+	font-weight: 700;
+}
+.card details[open] summary::before {
+	transform: rotate(45deg);
+	content: url("data:image/svg+xml,%3Csvg width='100%' height='100%' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.6066 12H1.3934' stroke='%23202842' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 1.39343V22.6066' stroke='%23202842' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+@counter-style corona-warning {
+	system: cyclic;
+	suffix: " ";
+}
+@counter-style corona-info {
+	system: cyclic;
+	suffix: " ";
+}
+@counter-style corona-alert {
+	system: fixed;
+	suffix: " ";
 }
