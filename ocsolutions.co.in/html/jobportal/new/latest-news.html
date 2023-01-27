@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from ocsolutions.co.in/html/jobportal/new/contact-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Jan 2023 06:04:34 GMT -->
+<head>
+	<title>Contact Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<!-- Bootstrap 4 link -->
+	<link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+	<!-- Font-family -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&amp;display=swap" rel="stylesheet">
+	<!-- Font-awesome link -->
+	<link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <script>
+        let captchaText = document.querySelector('#captcha');
+        var ctx = captchaText.getContext("2d");
+        ctx.font = "30px Roboto";
+        ctx.fillStyle = "#08e5ff";
+    
+    
+        let userText = document.querySelector('#captchacode');
+        let submitButton = document.querySelector('#submitButton');
+        let output = document.querySelector('#output');
+        let refreshButton = document.querySelector('#refreshButton');
+    
+       
+        console.log("CAPTCHA~~>>>>>>",captchaText)
+        console.log("userText~~>>>>>>",userText)
+        console.log("submitButton~~>>>>>>",submitButton)
+        console.log("output~~>>>>>>",output)
+        console.log("refreshButton~~>>>>>>",refreshButton)
+    
+        let alphaNums = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    let emptyArr = [];
+    
+  
+    for (let i = 1; i <= 7; i++) {
+    emptyArr.push(alphaNums[Math.floor(Math.random() * alphaNums.length)]);
+    }
+    var c = emptyArr.join('');
+    ctx.fillText(emptyArr.join(''),captchaText.width/4, captchaText.height/2);
+    
+    userText.addEventListener('keyup', function(e) {
+    if (e.keyCode === 13) {
+    if (userText.value === c) {
+    output.classList.add("correctCaptcha");
+    output.innerHTML = "Correct!";
+    } else {
+    output.classList.add("incorrectCaptcha");
+    output.innerHTML = "Incorrect, please try again";
+    }
+    }
+    });
+    
+    submitButton.addEventListener('click', function() {
+    if (userText.value === c) {
+    output.classList.add("correctCaptcha");
+    output.innerHTML = "Correct!";
+    } else {
+    output.classList.add("incorrectCaptcha");
+    output.innerHTML = "Incorrect, please try again";
+    }
+    });
+    
+  
+    refreshButton.addEventListener('click', function() {
+    userText.value = "";
+    let refreshArr = [];
+    for (let j = 1; j <= 7; j++) {
+    refreshArr.push(alphaNums[Math.floor(Math.random() * alphaNums.length)]);
+    }
+    ctx.clearRect(0, 0, captchaText.width, captchaText.height);
+    c = refreshArr.join('');
+    ctx.fillText(refreshArr.join(''),captchaText.width/4, captchaText.height/2);
+    output.innerHTML = "";
+    });
+    </script>
+
+</head>
+<body>
+<!-- header start here -->
+<header id="header">
+<!-- navbar start here -->
+<nav class="navbar navbar-expand-lg navbar-light">
+	<div class="container-fluid">
+		<!-- navbar-brand -->
+		<a class="navbar-brand" href="home.html">
+			<img src="images/logo/header-logo.png" class="w-100 main-logo" alt="Logo" title="Logo" />
+		</a>
+		<!-- toggler/collapsibe Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!-- navbar links -->
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav navbar-center ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="home.html">Home </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="employer-login.html">Job</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about-us.html">About Us</a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link" href="latest-news.html">News</a>
+				</li>
+				<li class="nav-item drop-down">
+					<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Pages</a>
+					<!-- Mega-menu -->
+					<div class="mega-menu fadeIn animated dropdown-menu">
+						<div class="row">
+							<div class="col-sm-3 border-right">
+								<ul class="list-unstyled">
+									<li><a class="dropdown-item" href="company-register.html">Company Register</a></li>
+									<li><a class="dropdown-item" href="employer-login.html">Employer Login</a></li>
+									<li><a class="dropdown-item" href="company-listing.html">Company Listing</a></li>
+									<li><a class="dropdown-item" href="company-details.html">Company Details</a></li>
+									<li><a class="dropdown-item" href="post-job.html">Post Job</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-3 border-right">
+								<ul class="list-unstyled">
+									<li><a class="dropdown-item" href="job-listing.html">Job Listing</a></li>
+									<li><a class="dropdown-item" href="job-details.html">Job Details</a></li>
+									<li><a class="dropdown-item" href="candidate-listing.html">Candidate Listing</a></li>
+									<li><a class="dropdown-item" href="candidate-details.html">Candidate Details</a></li>
+									<li><a class="dropdown-item" href="profile.html">Profile</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-3 border-right">
+								<ul class="list-unstyled">
+									<li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+									<li><a class="dropdown-item" href="register.html">Register</a></li>
+									<li><a class="dropdown-item" href="forgot-password.html">Forgot Password</a></li>
+									<li><a class="dropdown-item" href="login.html">Login</a></li>
+									<li><a class="dropdown-item" href="faq.html">Faq</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-3">
+								<ul class="list-unstyled">
+									<li><a class="dropdown-item" href="blog.html">Blog </a></li>
+									<li><a class="dropdown-item" href="blog-detail.html">Blog Detail </a></li>
+									<li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
+									<li><a class="dropdown-item" href="not-found.html">Not Found</a></li>
+									<li><a class="dropdown-item" href="term-conditions.html">Term Conditions</a></li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- /. mega-menu -->
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="contact-us.html">Contact</a>
+				</li>
+			</ul>
+			<!-- navbar right button -->
+			<ul class="navbar-nav navbar-right">
+				<li><a class="btn btn-link mr-sm-2" href="profile.html">
+					<i class="fa fa-upload mr-2" aria-hidden="true"></i> Upload Resume
+				</a></li>
+				<li><a class="btn  my-2 my-sm-0 sign-in" href="register.html">Sign Up</a></li>
+			</ul><!-- navbar right button end here -->
+		</div><!-- navbar links -->
+	</div>
+</nav><!-- navbar -->
+</header>
+<!-- header -->
+
+<section class="nearJob">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-7 nearcol">
+				<h1 class="text-center pt-4">Latest News</h1>
+				<!-- <h2>Is Near to You</h2> -->
+
+                <div class="card">
+                    <!-- <h1>Coronavirus - Facts, advice and measures</h1> -->
+                    
+                    <details class="warning">
+                      <summary>Facts and knowledge about COVID-19</summary>
+                      <p>Some text to be hidden.</p> 
+                      <p>Some text to be hidden.</p> 
+                      <p>Some text to be hidden.</p> 
+                      <p>Some text to be hidden.</p> 
+                    </details>
+                    
+                    <details class="info">
+                      <summary>For the public</summary>
+                      <p>Social distance, quarantine and isolation</p>
+                      <p>Hand hygiene, cough etiquette, cleaning and laundry</p>
+                      <p>When children have acute respiratory tract infections</p>
+                      <p>Risk groups and their relatives</p>
+                    </details>
+                    
+                    <details class="alert">
+                      <summary>Facts and knowledge about COVID-19</summary>
+                      <p>Some text to be hidden.</p> 
+                      <p>Some text to be hidden.</p> 
+                      <p>Some text to be hidden.</p> 
+                      <p>Some text to be hidden.</p> 
+                    </details>
+                  </div>
+			</div>
+			<div class="col-sm-5 d-md-block">
+				<!-- <div class="row">
+					<div class="d-flex w-100">
+						<img class="w-100" src="images/contact-us/banner.png" alt="Banner" />
+					</div>
+				</div> -->
+                <section class="loginForm">
+                    <div class="container">
+                        <div class="row">
+                            <div class="mx-auto">	
+                                <form method="post">
+                                    <h3 class="text-center">QUICK REGISTRATION FOR JOB SEEKER</h3>
+                                    
+                                    <div class="latestForm">
+                                        <!-- firstname input -->
+                                        <div class="form-group"> 
+                                            <input type="text" name="firstname" id="firstName" class="form-control" value="" required> 
+                                            <label class="form-control-placeholder" for="firstName">First Name</label>
+                                            <i class="fa fa-user iconSet" aria-hidden="true"></i>
+                                        </div>
+                                        <!-- last input -->
+                                        <div class="form-group"> 
+                                            <input type="text" name="lastname" id="lastName" class="form-control" value="" required> 
+                                            <label class="form-control-placeholder" for="lastName">Last Name</label>
+                                            <i class="fa fa-user iconSet" aria-hidden="true"></i>
+                                        </div>
+                                        <!-- email input -->
+                                        <div class="form-group"> 
+                                            <input type="email" name="email" id="email" class="form-control" value="" required> 
+                                            <label class="form-control-placeholder" for="email">E-mail Address</label>
+                                            <i class="fa fa-envelope iconSet" aria-hidden="true"></i>
+                                        </div>
+                                        <!--contact-->
+                                        <div class="form-group"> 
+                                            <input type="contact" name="conatct" id="contact" class="form-control" value="" required> 
+                                            <label class="form-control-placeholder" for="contact">Contact Number</label>
+                                            <i class="fa fa-phone iconSet" aria-hidden="true"></i>
+                                        </div>
+                                         <!-- password input -->
+                                        <div class="form-group"> 
+                                            <input type="password" name="password" id="password" class="form-control" value="" required> 
+                                            <label class="form-control-placeholder" for="password">Password</label> 
+                                            <i class="fa fa-lock iconSet" aria-hidden="true"></i>
+                                        </div> 
+                                        <!-- job profile -->
+                                        <div class="form-group"> 
+                                            <input type="email" name="job-profile" id="job-profile" class="form-control" value="" required> 
+                                            <label class="form-control-placeholder" for="job-profile">Job profile</label>
+                                            <i class="fa fa-pencil iconSet" aria-hidden="true"></i>
+                                        </div>
+                                        <!--upload Cv-->
+                                        <h6 class=" pt-2">Upload CV</h6>
+                                        <div class="form-group">
+                                            <input type="file" name="file" id="inputFile" class="form-control" required>
+                                            <i class="fa fa-file iconSet" aria-hidden="true"></i>
+                                        </div>
+                                        <!--Captcha code-->
+
+                                            <div class="row m-1">
+                                                <div class="m-1">
+
+                                                    <canvas id="captcha" class="form-control">captcha text</canvas>
+                                                    <!-- <input type="code" name="code" id="code" class="form-control" value="" required> 
+                                                    <label class="form-control-placeholder" for="job-profile">Enter Code</label>   -->
+                                                </div>
+                                                <div class="m-1">
+                                                    <div class="form-group">
+                                                    <input type="text" name="captchacode" id="captchacode" class="form-control" value="" required> 
+                                                    <label class="form-control-placeholder" for="job-profile">Enter Code</label>
+                                                    <i class="fa fa-pencil iconSet" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="m-1">
+                                                    <div>
+                                                        <button id="refreshButton" type="submit" class="btn btn-danger btn-block">Refresh</button>
+                                                        <span id="output"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                    <!-- /. latestForm -->
+                                    <!-- Submit button -->
+                                    <input type="submit" id="submitButton" name="submit" class="btn btn-danger btn-block mb-4" id="register" value="Register Now">
+                
+                                    <!-- Register buttons -->
+                                    <!-- <div class="text-center"> 
+                                        <p>Have't Any Account Yet? <a class="clickHere" href="login.html">Click Here</a></p>
+                                        <p>or</p>
+                                        <p>Login With Social</p>
+                                        <a href="#" class="btn btn-danger btn-floating rounded-pill mx-2">
+                                          <i class="fa fa-google mr-1"></i> Google
+                                        </a>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-floating mx-2">
+                                          <i class="fa fa-facebook mr-1"></i> Facebook
+                                        </a>
+                                        <a href="#" class="btn btn-info rounded-pill btn-floating mx-2">
+                                          <i class="fa fa-twitter mr-1"></i> Twitter
+                                        </a>
+                                    </div> -->
+                                </form>			
+                            </div>
+                        </div>
+                    </div>
+                </section>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /. nearJob -->
+
+
+<!-- footer start here -->
+<footer id="footer">
+	<!--<svg viewBox="0 0 1440 250">
+	  <path fill="#fff" fill-opacity="1" d="M0,96L120,122.7C240,149,480,203,720,202.7C960,203,1200,149,1320,122.7L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+	</svg>-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3">
+				<a href="home.html">
+					<img src="images/home/jobLogo-footer.png" alt="Logo" title="Logo">
+				</a>
+				<div class="footer_inner">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut <br> labore et dolore accumsan lacus <br> vel facilisis.
+					</p>
+				</div>
+			</div>
+			<div class="col-sm-2 mx-auto">
+				<h5>Usefull Links</h5>
+				<div class="footer_inner">
+					<ul class="list-unstyled">
+						<li><a href="about-us.html">About Us</a></li>
+						<li><a href="contact-us.html">Contact Us</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">News & Blog </a></li>
+						<li><a href="#">Our features</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<h5>Contact Us</h5>
+				<div class="footer_inner">
+					<div class="media">
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+						<div class="media-body"><p> <span class="f_rubik">C - 719,</span>Siddhi Vinayak Business Tower,
+							Near Kataria Arcade, Off S.G. Highway,
+							Post: Makarba, <br>Ahmedabad-380051, Gujarat.<span class="f_rubik"></span> </p></div>
+					</div>
+					<div class="media">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i> 
+						<div class="media-body"><p>mcjain@dishapro.com, hr@dishapro.com</p></div>
+					</div>
+					<div class="media">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<div class="media-body"><p class="f_rubik">+91-9825306468</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<h5>Get In Touch</h5>
+				<div class="footer_inner">
+					<form class="form-inline valid" method="post">
+						<div class="input-group mb-4">
+							<input type="email" name="email" class="form-control" id="e_mail" placeholder="E-mail Address" value="" required>
+							<div class="input-group-append">
+								<button class="btn btn-white" name="submit" type="submit" id="submit">
+									<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<ul class="list-inline">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- footer end here -->
+
+<!-- Js Links -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+<!-- Mirrored from ocsolutions.co.in/html/jobportal/new/contact-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Jan 2023 06:04:34 GMT -->
+</html>
