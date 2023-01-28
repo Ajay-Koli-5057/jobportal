@@ -5245,7 +5245,17 @@ nav>div a.nav-item.nav-link:focus {
 	margin-bottom: 10px !important;
 
 }
+
 .tab-content>.active {
-    display: block;
-    height: auto;
+	display: block;
+	height: auto;
 }
+
+/* style for scroll companies */
+.main-div-scroll {
+	height: 528px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 22px
+ }
+ 
