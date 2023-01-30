@@ -5454,4 +5454,7 @@ nav > div a.nav-item.nav-link:focus {
 	-moz-transform: rotate(180deg);
 	transform: rotate(180deg);
 } 
- 
+.extracalss-cor {
+  padding-left: 10px;
+  padding-right: 10px;
+}
