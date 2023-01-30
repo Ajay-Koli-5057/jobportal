@@ -5326,3 +5326,13 @@ nav>div a.nav-item.nav-link.active {
 	system: fixed;
 	suffix: " ";
 }
+
+
+
+.card-style {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
