@@ -2057,6 +2057,13 @@ h3.disColor {
   padding: 0;
 }
 
+.card-header {
+  background:#282b4a !important;
+}
+.card-header h5 button{
+  color: white !important;
+}
+
 .frequently .card-header a[aria-expanded="true"] {
   background: #ff4153 !important;
   color: #fff !important;
@@ -5229,13 +5236,13 @@ nav > div a.nav-item.nav-link.active {
 
 .card {
   background: white;
-  padding: 38px 36px;
+  /* padding: 38px 36px; */
   margin-top: 40px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   border-radius: 4px;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  padding: 100px 0;
+  /* padding: 100px 0; */
 }
 .card h1 {
   font-family: var(--font-ibm-plex-sans);
@@ -5420,3 +5427,31 @@ nav > div a.nav-item.nav-link:focus {
   background: #ff4153;
   color: #ffffff;
 }
+.login-inner-right{
+  padding: 21px 38px 2px;
+  box-shadow:0 10px 60px 1px rgba(0, 0, 0, 0.08) !important
+}
+
+.panel-title>a, .panel-title>a:active{
+	display:block;
+	padding:15px;
+  color:#555;
+  font-size:16px;
+  font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:1px;
+  word-spacing:3px;
+	text-decoration:none;
+}
+.panel-heading  a:before {
+   font-family: 'Glyphicons Halflings';
+   content: "\e114";
+   float: right;
+   transition: all 0.5s;
+}
+.panel-heading.active a:before {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	transform: rotate(180deg);
+} 
+ 

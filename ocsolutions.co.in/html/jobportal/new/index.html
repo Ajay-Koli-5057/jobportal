@@ -169,15 +169,15 @@
 		<!-- homePage -->
 	</div>
 	<!-- banner end here -->
-	<section id="tabs " class="tabination-section">
+	<section id="tabs " class="tabination-section ">
 		<div class="container-fluid fixsize-class">
 			<!-- <div class="row"> -->
 			<section id="tabs tabination-section">
 				<div class="container fixsize-class">
 					<div class="row newrow">
 						<div class="col-sm-6 ">
-							<div class="login-inner">
-								<div class="login-sec">
+							 
+								<!-- <div class="login-sec">
 									<div class="text-center">
 										<h3 class="text-center">Quick Registrtion for Employee</h3>
 									</div>
@@ -204,13 +204,51 @@
 												</select>
 											</div>
 										</div>
-										<button type="submit" class="btn rounded-pill send-message">Submit</button>
+ 										<input type="submit" name="submit" class="btn btn-danger btn-block mb-4"
+											id="register" value="Submit">
+
 									</form>
 								</div>
+							</div> -->
+							<div class="login-inner-right">
+								<form method="post">
+									<h3 class="text-center p-3">Quick Registrtion for Employee</h3>
+									<div class="latestForm">
+										<div class="form-group">
+											<input type="text" name="Title" id="Title" class="form-control"
+												value="" required>
+											<label class="form-control-placeholder" for="Title">Title</label>
+											<i class="fa fa-user-o iconSet" aria-hidden="true"></i>
+										</div>
+										<div class="form-group">
+											<input type="text" name="Description" id="Description" class="form-control"
+												value="" required>
+											<label class="form-control-placeholder" for="Description">Description</label>
+											<i class="fa fa-user-o iconSet" aria-hidden="true"></i>
+										</div>
+										<div class="form-group">										 
+											<i class="fa fa-caret-down iconSet"></i>
+											<select name="noofEmplyee" id="noofEmplyee" class="form-control"
+													aria-label="Default select example">
+													<option value=""></option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+											<label class="form-control-placeholder" for="Description">Description</label>
+
+										</div>
+										 
+									</div>
+									<input type="submit" name="submit" class="btn btn-danger btn-block mb-4"
+										id="register" value="Submit">
+
+								</form>
 							</div>
 						</div>
 						<div class="col-sm-6 ">
-							<div class="login-inner">
+							<!-- <div class="login-inner">
 								<div class="login-sec">
 									<div class="text-center">
 										<h3 class="text-center">Quick Registrtion for Job seeker</h3>
@@ -251,12 +289,60 @@
 												<label for="inputZip">Zip</label>
 												<input type="text" class="form-control" id="inputZip">
 											</div>
-										</div>
-										<button type="submit" class="btn rounded-pill send-message">Submit</button>
+										</div>										
+										<input type="submit" name="submit" class="btn btn-danger btn-block mb-4" id="register" value="Submit">
 									</form>
 								</div>
+							</div> -->
+							<div class="login-inner-right ">
+								<form method="post">
+									<h3 class="text-center p-3">Quick Registrtion for Job seeker</h3>
+									<div class="latestForm">
+										<div class="form-group">
+											<input type="text" name="firstname" id="firstName" class="form-control"
+												value="" required>
+											<label class="form-control-placeholder" for="firstName">First Name</label>
+											<i class="fa fa-user-o iconSet" aria-hidden="true"></i>
+										</div>
+										<div class="form-group">
+											<input type="text" name="lastname" id="lastName" class="form-control"
+												value="" required>
+											<label class="form-control-placeholder" for="lastName">Last Name</label>
+											<i class="fa fa-user-o iconSet" aria-hidden="true"></i>
+										</div>
+										<div class="form-group">
+											<input type="email" name="email" id="email" class="form-control" value=""
+												required>
+											<label class="form-control-placeholder" for="email">E-mail Address</label>
+											<i class="fa fa-envelope-o iconSet" aria-hidden="true"></i>
+										</div>
+										<div class="form-group">
+											<input type="text" name="address" id="address" class="form-control" value=""
+												required>
+											<label class="form-control-placeholder" for="address">Address</label>
+											<i class="fa fa-user-o iconSet" aria-hidden="true"></i>
+										</div>
+										<div class="form-group">
+											<input type="state" name="state" id="state" class="form-control" value=""
+												required>
+											<label class="form-control-placeholder" for="state">state</label>
+											<i class="fa fa-lock iconSet" aria-hidden="true"></i>
+										</div>
+										<div class="form-group">
+											<input type="number" name="zip" id="zip" class="form-control" value=""
+												required>
+											<label class="form-control-placeholder" for="">zip </label>
+											<i class="fa fa-lock iconSet" aria-hidden="true"></i>
+										</div>
+									</div>
+									<input type="submit" name="submit" class="btn btn-danger btn-block mb-4"
+										id="register" value="Submit">
+
+								</form>
+
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</section>
@@ -566,11 +652,14 @@
 					<h5>Contact Us</h5>
 					<div class="footer_inner">
 						<div class="media">
- 							<div class="media">
+							<div class="media">
 								<i class="fa fa-map-marker" aria-hidden="true"></i>
-								<div class="media-body"><p> <span class="f_rubik">613 </span>Accolade II Opposite Shell Petrol Pump,
-									Sola Science City Road, Near Science City ,
-								  <br>Ahmedabad, Gujarat 380060.<span class="f_rubik"></span> </p></div>
+								<div class="media-body">
+									<p> <span class="f_rubik">613 </span>Accolade II Opposite Shell Petrol Pump,
+										Sola Science City Road, Near Science City ,
+										<br>Ahmedabad, Gujarat 380060.<span class="f_rubik"></span>
+									</p>
+								</div>
 							</div>
 						</div>
 						<div class="media">
