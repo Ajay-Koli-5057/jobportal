@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from ocsolutions.co.in/html/jobportal/new/post-job.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Jan 2023 06:04:23 GMT -->
+<!-- Mirrored from ocsolutions.co.in/html/jobportal/new/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Jan 2023 06:04:32 GMT -->
 <head>
-	<title>Post Job</title>
+	<title>Login</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Stylesheet -->
@@ -105,7 +105,7 @@
 	</div>
 </nav><!-- navbar -->
 </header>
-<!-- header -->
+<!-- header --> 
 
 <section class="nearJob">
 	<div class="container-fluid">
@@ -117,7 +117,7 @@
 			<div class="col-sm-7 d-none d-md-block">
 				<div class="row">
 					<div class="d-flex w-100">
-						<img class="w-100" src="images/post-job/banner.png" alt="Banner">
+						<img class="w-100" src="images/contact-us/banner.png" alt="Banner" />
 					</div>
 				</div>
 			</div>
@@ -126,91 +126,57 @@
 </section>
 <!-- /. nearJob -->
 
-<section class="stillGot">
-	<div class="container-fluid">
-		<div class="row text-center">
-			<div class="col-sm-12 mx-auto">
-				<h2>Post Your <span class="text-red"> Job</span></h2>
-			</div>
-		</div>
+<section class="loginForm">
+	<div class="container">
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-sm-6 mx-auto">	
 				<form method="post">
-					<div class="row">
-						<div class="col-sm-12 form-group">
-							<input type="text" name="name" id="name" class="form-control" placeholder="Name" value="" required>
+					<h3 class="text-center">LOGIN</h3>
+					<div class="latestForm">
+						<!-- user input -->
+						<div class="form-group"> 
+							<input type="email" name="email" id="email" class="form-control" value="" required> 
+							<label class="form-control-placeholder" for="userName">Email</label>
+							<i class="fa fa-envelope-o iconSet" aria-hidden="true"></i>
+						</div>
+						<!-- password input -->
+						<div class="form-group"> 
+							<input type="password" name="password" id="password" class="form-control" value="" required> 
+							<label class="form-control-placeholder" for="password">Password</label> 
+							<i class="fa fa-lock iconSet" aria-hidden="true"></i>
+						</div> 
+					</div> 
+					<!-- /. latestForm -->
+					<!-- 2 column grid layout for inline styling -->
+					<div class="row my-4">
+						<div class="col d-flex justify-content-left">
+							<!-- Checkbox -->
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" name="savepassword" class="custom-control-input" id="savePwd" checked required>
+								<label class="custom-control-label" for="savePwd">Save Password</label>
+							</div>
+						</div>
+
+						<div class="col text-right">
+						  <!-- Simple link -->
+						  <a class="forgotPwd" href="forgot-password.html">Forgot password?</a>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-sm-6 form-group dropdown-container">
-							<select name="job_category" id="job_cate" class="form-control">
-								<option value="category">Job Category</option>
-							</select>
-						</div>
-						<div class="col-sm-6 form-group dropdown-container">
-							<select name="location" id="location" class="form-control">
-								<option value="location">Loaction</option>
-								<option value="newyork">New York</option>
-								<option value="losangeles">Los Angeles</option>
-								<option value="shicago">Shicago</option>
-								<option value="uniteskingdom">United Kingdom</option>
-							</select>
-						</div>
+
+					<!-- Submit button -->
+					<input type="submit" name="submit" class="btn btn-danger btn-block" id="login" value="LOGIN">
+
+					<!-- Register buttons -->
+					<div class="text-center">
+						<p>Have't Any Account Yet? <a class="clickHere" href="register.html">Click Here</a></p>
 					</div>
-					<div class="row">
-						<div class="col-sm-6 form-group">
-							<input type="text" name="companyname" id="companyName" class="form-control" placeholder="Company Name" value="" required>
-						</div>
-						<div class="col-sm-6 form-group">
-							<input type="text" name="monthlysalary" id="monthlySalary" class="form-control" placeholder="Monthly Salary" value="" required>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-6 form-group">
-							<input type="text" name="vacancies" id="vacancies" class="form-control" placeholder="Vacancies" value="" required>
-						</div>
-						<div class="col-sm-6 form-group dropdown-container">
-							<select name="job_type" id="jobType" class="form-control">
-								<option value="jobtype">Job Type</option>
-							</select>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-3 form-group dropdown-container">
-							<select name="experince" id="experince" class="form-control">
-								<option value="experince">Experince</option>
-							</select>
-						</div>
-						<div class="col-sm-3 form-group dropdown-container">
-							<select name="gender" id="gender" class="form-control">
-								<option value="gender">Gender</option>
-								<option value="male">Male</option>
-								<option value="female">Female</option>
-								<option value="other">Other</option>
-							</select>
-						</div>
-						<div class="col-sm-6 form-group dropdown-container">
-							<select name="nationality" id="nationality" class="form-control">
-								<option value="nationality">Nationality</option>
-							</select>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12 form-group">
-							<textarea class="form-control" name="discription" rows="12" placeholder="Job Descriptions" required></textarea>
-						</div>
-					</div>
-					<div class="row pt-4">
-						<div class="col-sm-12 form-group">
-							<button type="submit" name="submit" class="btn btn-danger btn-block" id="post">Post Your Job </button>
-						</div>
-					</div>
-				</form>
+				</form>			
 			</div>
 		</div>
 	</div>
 </section>
-<!-- /. stillGot -->
+<!-- /. contactForm -->
+
 
 <!-- footer start here -->
 <footer id="footer">
@@ -285,12 +251,10 @@
 	</div>
 </footer>
 <!-- footer end here -->
-
 <!-- Js Links -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 </body>
-
-<!-- Mirrored from ocsolutions.co.in/html/jobportal/new/post-job.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Jan 2023 06:04:26 GMT -->
 </html>
+
