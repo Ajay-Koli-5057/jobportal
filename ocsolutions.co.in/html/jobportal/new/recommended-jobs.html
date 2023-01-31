@@ -127,29 +127,6 @@
 </section>
 <!--Section-->
 
-<!--row-->
-<section>
-    <form>
-        <div class="row m-5 justify-content-center">
-                <div class="form-group col-sm-3 pr-0"> 
-                    <label class="form-control-placeholder" for="designation">Designation</label>
-                    <input type="text" name="designation" id="designation" class="form-control" value="" required placeholder="Designation"> 
-                </div>
-                <div class="form-group col-sm-3 pr-0"> 
-                    <label class="form-control-placeholder" for="location">Location</label>
-                    <input type="text" name="location" id="location" class="form-control" value="" required placeholder="Location"> 
-                </div>
-                <div class="form-group col-sm-3 pr-0"> 
-                    <label class="form-control-placeholder" for="industries">Industries</label>
-                    <input type="text" name="industries" id="industries" class="form-control" value="" required placeholder="Enter text you want to add"> 
-                </div>
-                <div class="col-sm-2 pt-2">
-                    <label class="form-control-placeholder" for="submit"></label>
-                    <input type="submit" name="inputsearch" id="input-search" class="btn btn-danger btn-block form-control" value="Search">
-                </div>
-        </div>
-    </form>
-</section>
 
 <section class="mb-5 m-1 row justify-content-center">
     <div class="col-sm-4 m-1 d-md-block card p-3">
@@ -204,156 +181,189 @@
     </div>
     
     <div class="col-sm-6 m-1 d-md-block card p-3">
-        <u><h3 class="text-center mb-4" >APPLIED JOBS</h3> </u>
-        <div class="table-responsive">          
-            <table class="table" style="border-collapse: separate;">
-              <thead >
-                <tr>
-                  <th>#</th>
-                  <th>Comapny Name</th>
-                  <th>Job Title</th>
-                  <th>Posted On</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Aena</td>
-                  <td>Pitt</td>
-                  <td>35</td>
-                </tr>
-              </tbody>
+        <u><h3 class="text-center mb-4">RECOMMENDED JOBS</h3> </u>
+        <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0 d-flex justify-content-between">
+                    <button
+                      class="btn btn-link warning"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      .Net employee required with 2 years of experience
+                    </button>
+                    <span class="btn btn-dark extrs-cstm"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                     >+</span>
+                  </h5>
+                  <div class="ml-3">
+                    <span style="color: white;">New Company</span> <br/>
+                    <span style="color: white;">Ahmedabad</span>
+                  </div>
+                  <div>
+                    <div class="d-flex flex-row-reverse" style="color: white;"> 
+                        <div class="p-2">Apply for this Job</div>
+                        <div class="p-2">Expired</div>
+                        <div class="p-2">Deactivated</div>
+                        <div class="p-2">
+                            View Details
+                        </div>
+                        <!-- <div>
+                            <span class="btn btn-dark extrs-cstm"
+                            data-toggle="collapse"
+                            data-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                           >Apply for this Job</span>
+                        </div>
+                       
+                        <div>
+                            <span class="btn btn-dark extrs-cstm disabled"
+                            data-toggle="collapse"
+                            data-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                           >Expired</span>
+                        </div>
 
-              <tbody id="applieddata" class="d-none">
-                <tr>
-                  <td>1</td>
-                  <td>Aena</td>
-                  <td>Pitt</td>
-                  <td>35</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Aena</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                  </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Aena</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-              </tbody>
-              <!-- <tfoot style="position: sticky;">
-                <tr>
-                    <td><a id="viewdata">View more</a></td>
-                </tr>
-              </tfoot> -->
-            </table>
-            <a id="viewdata">View More</a>
-            <script>
-                  document.getElementById('viewdata').addEventListener('click', function (event) {
-                    if($("#viewdata").html()=="View More"){
-                            $("#viewdata").html("View Less");
-                        }
-                        else{
-                            $("#viewdata").html("View More");
-                        }
-                      document.getElementById('applieddata').classList.toggle('d-none')
-                  })
-            </script>
-        </div>
+                       <div>    
+                            <span class="btn btn-dark extrs-cstm disabled"
+                            data-toggle="collapse"
+                            data-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                        >Deactivated</span>
+                       </div>
 
-        
-        <u><h3 class="text-center mb-4 mt-5">RECOMMENDED JOBS</h3> </u>
-        <div class="table-responsive">          
-            <table class="table" style="border-collapse: separate;">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Comapny Name</th>
-                  <th>Job Title</th>
-                  <th>Posted On</th>
-                </tr>
-              </thead>
-              <tbody >
-                <tr>
-                  <td>1</td>
-                  <td>Aena</td>
-                  <td>Pitt</td>
-                  <td>35</td>
-                </tr>
-              </tbody>
-              <!-- <tbody id="tabledata" class="d-none">
-                <tr>
-                    <td>1</td>
-                    <td>Aena</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Aena</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Aena</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Aena</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Aena</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Aena</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Aena</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Aena</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-                
-              </tbody> -->
-            </table>
-            <a id="viewall" href="./recommended-jobs.html">View More</a>
+                       <div>
+                        <span class="btn btn-dark extrs-cstm"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                       >View Details</span>
+                       </div> -->
 
-            <div class="mt-5">
-                <h4>VIEW PROFILE BY COMPANIES</h4>
-                <div>No Company has viewed your profile yet.</div>
-            </div>
-            <!-- <script>
-                document.getElementById('viewall').addEventListener('click', function (event) {
-                    if($("#viewall").html()=="View More"){
-                            $("#viewall").html("View Less");
-                        }
-                        else{
-                            $("#viewall").html("View More");
-                        }
-                    document.getElementById('tabledata').classList.toggle('d-none')
-                })
-            </script> -->
+                        
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse show"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <div class="col m-2">
+                        <div>
+                            <b>Required Skills :</b>
+                        </div>
+                        <div>
+                            <span class="badge badge-light p-2">.NET</span>
+                            <span class="badge badge-light p-2">c#</span>
+                            <span class="badge badge-light p-2">c# .NET</span>
+                        </div>
+                    </div>
+
+                    <div class="col m-2">
+                        <div>
+                            <b>Experience (In Years) :</b>
+                        </div>
+                        <div>
+                            <span class="badge badge-light p-2">Minimum: 2</span>
+                            <span class="badge badge-light p-2">Maximum: 5</span>
+                        </div>
+                    </div>
+
+                    <div class="col m-2">
+                        <div>
+                            <b>Salary (In lakhs) :</b>
+                        </div>
+                        <div>
+                            <span class="badge badge-light p-2">Minimum: 2</span>
+                            <span class="badge badge-light p-2">Maximum: 5</span>
+                        </div>
+                    </div>
+
+                    <div class="col m-2">
+                        <div>
+                            <b>Location :</b>
+                        </div>
+                        <div>
+                            <span class="badge badge-light p-2">Ahmedabad</span>
+                        </div>
+                    </div>
+
+                    <div class="col m-2">
+                        <div>
+                            <b>Industries :</b>
+                        </div>
+                        <div>
+                            <span class="badge badge-light p-2">IT Computers/Software</span>
+                        </div>
+                    </div>
+
+
+                    <div class="col m-2">
+                        <div>
+                            <b>Functional Area :</b>
+                        </div>
+                        <div>
+                            <span class="badge badge-light p-2">IT</span>
+                        </div>
+                    </div>
+
+                    <div class="col m-2">
+                        <div>
+                            <b>Role/Designation :</b>
+                        </div>
+                        <div>
+                            <span class="badge badge-light p-2">Software engineer/Programmer</span>
+                        </div>
+                    </div>
+
+                    <div class="col m-2">
+                        <div>
+                            <b>Qualification :</b>
+                        </div>
+                        <div>
+                            <span class="badge badge-light p-2">B.Com (Commerse)</span>
+                            <span class="badge badge-light p-2">MCA (Computers)<span>
+                        </div>
+                    </div>
+
+                    <div class="col m-2">
+                        <div>
+                            <b>Nationality :</b>
+                        </div>
+                        <div>
+                            <span class="badge badge-light p-2">Indian</span>
+                        </div>
+                    </div>
+
+                    <div class="col m-2">
+                        <div>
+                            <b>Schedule Job :</b>
+                        </div>
+                        <div>
+                            <span class="badge badge-light p-2">Live from: 01/08/2016</span>
+                            <span class="badge badge-light p-2">Closing on: 31/12/2017</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             
+              
         </div>
     </div>
 </section>
@@ -379,7 +389,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="col-sm-2 mx-auto">
+			<div class="col--2 mx-auto">
 				<h5>Usefull Links</h5>
 				<div class="footer_inner">
 					<ul class="list-unstyled">

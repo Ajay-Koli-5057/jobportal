@@ -187,91 +187,396 @@
 				<div class="container fixsize-class">
 					<div class="row newrow">
 						<div class="col-sm-6 "> 
-							<div class="login-inner">
-								<div class="login-sec">
-									<div class="text-center">
-										<h3 class="text-center">Quick Registrtion for Employee</h3>
+							<section class="loginForm">
+								<div class="container">
+								  <div class="row">
+									<div class="mx-auto">
+									  <form method="post">
+										<h3 class="text-center">
+										  QUICK REGISTRATION FOR EMPLOYEE
+										</h3>
+				  
+										<div class="latestForm">
+										  <div class="form-group">
+											<input
+											  type="text"
+											  name="title"
+											  id="title"
+											  class="form-control"
+											  value=""
+											  required
+											/>
+											<label
+											  class="form-control-placeholder"
+											  for="title"
+											  >Title</label
+											>
+											<i class="fa fa-user iconSet" aria-hidden="true"></i>
+										  </div>
+				  
+										  <div class="form-group">
+											<input
+											  type="text"
+											  name="description"
+											  id="description"
+											  class="form-control"
+											  value=""
+											  required
+											/>
+											<label class="form-control-placeholder" for="description"
+											  >Description</label
+											>
+											<i class="fa fa-user iconSet" aria-hidden="true"></i>
+										  </div>
+				  
+										  <div class="form-group">
+											<input
+											  type="number"
+											  name="empnum"
+											  id="empnum"
+											  class="form-control"
+											  value=""
+											  required
+											/>
+											<label class="form-control-placeholder" for="empnum"
+											  >Total Number of Employee</label
+											>
+											<i class="fa fa-user iconSet" aria-hidden="true"></i>
+										  </div>
+				  
+										<input
+										  type="submit"
+										  id="submitButton"
+										  name="submit"
+										  class="btn btn-danger btn-block mb-4"
+										  id="register"
+										  value="Register Now"
+										/>
+										
+									  </form>
 									</div>
-									<form>
-										<div class="form-group">
-											<label for="inputAddress">Title</label>
-											<input type="text" class="form-control" id="inputAddress"
-												placeholder="title">
-										</div>
-										<div class="form-group">
-											<label for="inputAddress2">Description</label>
-											<input type="text" class="form-control" id="inputAddress2"
-												placeholder="description">
-										</div>
-										<div class="form-row">
-											<div class="form-group col-md-6">
-												<label for="inputCity">Number of Employee</label><br>
-												<select name="noofEmplyee" id="noofEmplyee" class="form-control"
-													aria-label="Default select example">
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-												</select>
-											</div>
-										</div>
-										<!-- <button type="submit" class="btn rounded-pill send-message">Submit</button> -->
-										<input type="submit" name="submit" class="btn btn-danger btn-block mb-4" id="register" value="Submit">
-
-									</form> 
+								  </div>
 								</div>
-							</div>
+							  </section>
 						</div>
-						<div class="col-sm-6 ">
-							<div class="login-inner">
-								<div class="login-sec">
-									<div class="text-center">
-										<h3 class="text-center">Quick Registrtion for Job seeker</h3>
+						<div class="col-sm-6">
+							<section class="loginForm">
+								<div class="container">
+								  <div class="row">
+									<div class="mx-auto">
+									  <form method="post">
+										<h3 class="text-center">
+										  QUICK REGISTRATION FOR JOB SEEKER
+										</h3>
+				  
+										<div class="latestForm">
+										  <div class="form-group">
+											<input
+											  type="text"
+											  name="firstname"
+											  id="firstName"
+											  class="form-control"
+											  value=""
+											  required
+											/>
+											<label
+											  class="form-control-placeholder"
+											  for="firstName"
+											  >First Name</label
+											>
+											<i class="fa fa-user iconSet" aria-hidden="true"></i>
+										  </div>
+				  
+										  <div class="form-group">
+											<input
+											  type="text"
+											  name="lastname"
+											  id="lastName"
+											  class="form-control"
+											  value=""
+											  required
+											/>
+											<label class="form-control-placeholder" for="lastName"
+											  >Last Name</label
+											>
+											<i class="fa fa-user iconSet" aria-hidden="true"></i>
+										  </div>
+				  
+										  <div class="form-group">
+											<input
+											  type="email"
+											  name="email"
+											  id="email"
+											  class="form-control"
+											  value=""
+											  required
+											/>
+											<label class="form-control-placeholder" for="email"
+											  >E-mail Address</label
+											>
+											<i
+											  class="fa fa-envelope iconSet"
+											  aria-hidden="true"
+											></i>
+										  </div>
+				  
+										  <div class="form-group">
+											<input
+											  type="contact"
+											  name="conatct"
+											  id="contact"
+											  class="form-control"
+											  value=""
+											  required
+											/>
+											<label class="form-control-placeholder" for="contact"
+											  >Contact Number</label
+											>
+											<i class="fa fa-phone iconSet" aria-hidden="true"></i>
+										  </div>
+				  
+										  <div class="form-group">
+											<input
+											  type="password"
+											  name="password"
+											  id="password"
+											  class="form-control"
+											  value=""
+											  required
+											/>
+											<label class="form-control-placeholder" for="password"
+											  >Password</label
+											>
+											<i class="fa fa-lock iconSet" aria-hidden="true"></i>
+										  </div>
+				  
+										  <div class="form-group">
+											<input
+											  type="text"
+											  name="job-profile"
+											  id="job-profile"
+											  class="form-control"
+											  value=""
+											  required
+											/>
+											<label
+											  class="form-control-placeholder"
+											  for="job-profile"
+											  >Job profile</label
+											>
+											<i
+											  class="fa fa-pencil iconSet"
+											  aria-hidden="true"
+											></i>
+										  </div>
+				  
+										  <h6 class="pt-2">Upload CV</h6>
+										  <div class="form-group">
+											<input
+											  type="file"
+											  name="file"
+											  id="inputFile"
+											  class="form-control"
+											  required
+											/>
+											<i class="fa fa-file iconSet" aria-hidden="true"></i>
+										  </div>
+				  
+										  <div class="row m-1">
+											<div class="m-1">
+											  <canvas id="captcha" class="form-control"
+												>captcha text</canvas
+											  >
+											</div>
+											<div class="form-group m-1">
+											  <input
+												type="text"
+												name="captchacode"
+												id="captchacode"
+												class="form-control"
+												value=""
+												required
+											  />
+											  <label
+												class="form-control-placeholder"
+												for="captchacode"
+												>Enter Code</label
+											  >
+											  <i
+												class="fa fa-pencil iconSet"
+												aria-hidden="true"
+											  ></i>
+											</div>
+											<div class="m-1">
+											  <div>
+												<button
+												  id="refreshButton"
+												  type="submit"
+												  class="btn btn-danger btn-block"
+												>
+												  Refresh
+												</button>
+											  </div>
+											</div>
+										  </div>
+										  <span id="output"></span>
+										</div>
+				  
+										<input
+										  type="submit"
+										  id="submitButton"
+										  name="submit"
+										  class="btn btn-danger btn-block mb-4"
+										  id="register"
+										  value="Register Now"
+										/>
+				  
+										<script>
+										  const captchaText = document.querySelector("#captcha");
+										  var ctx = captchaText.getContext("2d");
+				  
+										  ctx.font = "50px Roboto";
+										  ctx.fillStyle = "#000000";
+				  
+										  let userText = document.querySelector("#captchacode");
+										  let submitButton =
+											document.querySelector("#submitButton");
+										  let output = document.querySelector("#output");
+										  let refreshButton =
+											document.querySelector("#refreshButton");
+				  
+										  let alphaNums = [
+											"A",
+											"B",
+											"C",
+											"D",
+											"E",
+											"F",
+											"G",
+											"H",
+											"I",
+											"J",
+											"K",
+											"L",
+											"M",
+											"N",
+											"O",
+											"P",
+											"Q",
+											"R",
+											"S",
+											"T",
+											"U",
+											"V",
+											"W",
+											"X",
+											"Y",
+											"Z",
+											"a",
+											"b",
+											"c",
+											"d",
+											"e",
+											"f",
+											"g",
+											"h",
+											"i",
+											"j",
+											"k",
+											"l",
+											"m",
+											"n",
+											"o",
+											"p",
+											"q",
+											"r",
+											"s",
+											"t",
+											"u",
+											"v",
+											"w",
+											"x",
+											"y",
+											"z",
+											"0",
+											"1",
+											"2",
+											"3",
+											"4",
+											"5",
+											"6",
+											"7",
+											"8",
+											"9",
+										  ];
+										  let emptyArr = [];
+				  
+										  for (let i = 1; i <= 7; i++) {
+											emptyArr.push(
+											  alphaNums[
+												Math.floor(Math.random() * alphaNums.length)
+											  ]
+											);
+										  }
+										  var c = emptyArr.join("");
+										  ctx.fillText(
+											emptyArr.join(""),
+											captchaText.width / 4,
+											captchaText.height / 2
+										  );
+				  
+										  userText.addEventListener("keyup", function (e) {
+											if (e.keyCode === 13) {
+											  if (userText.value === c) {
+												output.classList.add("correctCaptcha");
+												output.innerHTML = "Correct!";
+											  } else {
+												output.classList.add("incorrectCaptcha");
+												output.innerHTML = "Incorrect, please try again";
+											  }
+											}
+										  });
+				  
+										  submitButton.addEventListener("click", function () {
+											if (userText.value === c) {
+											  output.classList.add("correctCaptcha");
+											  output.innerHTML = "Correct!";
+											} else {
+											  output.classList.add("incorrectCaptcha");
+											  output.innerHTML = "Incorrect, please try again";
+											}
+										  });
+				  
+										  refreshButton.addEventListener("click", function () {
+											userText.value = "";
+											let refreshArr = [];
+											for (let j = 1; j <= 7; j++) {
+											  refreshArr.push(
+												alphaNums[
+												  Math.floor(Math.random() * alphaNums.length)
+												]
+											  );
+											}
+											ctx.clearRect(
+											  0,
+											  0,
+											  captchaText.width,
+											  captchaText.height
+											);
+											c = refreshArr.join("");
+											ctx.fillText(
+											  refreshArr.join(""),
+											  captchaText.width / 4,
+											  captchaText.height / 2
+											);
+											output.innerHTML = "";
+										  });
+										</script>
+									  </form>
 									</div>
-									<form>
-										<div class="form-row">
-											<div class="form-group col-md-6">
-												<label for="inputEmail4">Name</label>
-												<input type="text" class="form-control" id="inputEmail4"
-													placeholder="Name">
-											</div>
-											<div class="form-group col-md-6">
-												<label for="inputPassword4">Surname</label>
-												<input type="text" class="form-control" id="inputPassword4"
-													placeholder="Surname">
-											</div>
-										</div>
-										<div class="form-group">
-											<label for="inputAddress">Email</label>
-											<input type="email" class="form-control" id="inputAddress"
-												placeholder="abc@gmail.com">
-										</div>
-										<div class="form-group">
-											<label for="inputAddress2">Address 2</label>
-											<input type="text" class="form-control" id="inputAddress2"
-												placeholder="Apartment, studio, or floor">
-										</div>
-										<div class="form-row">
-											<div class="form-group col-md-6">
-												<label for="inputCity">City</label>
-												<input type="text" class="form-control" id="inputCity">
-											</div>
-											<div class="form-group col-md-4">
-												<label for="inputState">State</label>
-												<input type="text" class="form-control" id="inputZip">
-											</div>
-											<div class="form-group col-md-6">
-												<label for="inputZip">Zip</label>
-												<input type="text" class="form-control" id="inputZip">
-											</div>
-										</div>
-										<!-- <button type="submit" class="btn rounded-pill send-message">Submit</button> -->
-										<input type="submit" name="submit" class="btn btn-danger btn-block mb-4" id="register" value="Submit">
-
-									</form>
+								  </div>
 								</div>
-							</div>
-						</div>
+							</section>
 					</div>
 				</div>
 			</section>
@@ -701,4 +1006,4 @@
 
 <!-- Mirrored from ocsolutions.co.in/html/jobportal/new/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Jan 2023 06:03:59 GMT -->
 
-</html>		
+</html>

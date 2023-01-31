@@ -5755,7 +5755,8 @@ a.badge-danger:focus {
 
 .badge-light {
     color: #212529;
-    background-color: #f8f9fa
+    background-color: #f0f2f4;
+    /* background-color: #f8f9fa */
 }
 
 a.badge-light:focus,
