@@ -4449,6 +4449,7 @@ a.page-link {
   .homePage .socialImage {
     padding: 50px 0;
     width: auto;
+    display: none;
   }
 
   .explore {
