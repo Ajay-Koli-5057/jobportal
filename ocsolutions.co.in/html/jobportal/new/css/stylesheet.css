@@ -255,6 +255,7 @@ iframe {
 .homePage p {
   padding: 40px 0;
   line-height: 30px;
+  text-align: justify;
   color: #7c7271 !important;
   font-weight: 600 !important;
 }
@@ -1060,7 +1061,7 @@ sup {
 }
 
 .contactForm form {
-  padding: 80px 30px 0;
+  padding: 50px 50px 0;
 }
 
 .contInner i {
@@ -1112,6 +1113,7 @@ sup {
 
 .contactMap {
   padding: 0 0 180px;
+  padding-top: 20px;
 }
 
 .custom-control-input:focus ~ .custom-control-label::before {
@@ -1157,6 +1159,7 @@ sup {
 
 .terms ul {
   padding-left: 20px;
+  text-align: justify
 }
 
 .terms ul li {
@@ -1171,6 +1174,7 @@ sup {
 .terms p {
   margin-bottom: 56px;
   margin-top: 30px;
+  text-align: justify
 }
 
 .terms .f_rubik {
@@ -1382,10 +1386,11 @@ sup {
   color: #ff4153 !important;
 }
 
+
 .loginForm input[type="submit"] {
   border-radius: 10px;
   padding: 10px;
-  font-size: 18.62px;
+  font-size: 18.62px; 
   margin-bottom: 100px !important;
 }
 
@@ -1494,6 +1499,7 @@ sup {
 .candidate p {
   margin-bottom: 25px;
   display: flex;
+  text-align: justify
 }
 
 .candidate .leftcandi i.fa.fa-caret-right {
@@ -3141,6 +3147,7 @@ a.page-link {
 .detail-inner p {
   font-size: 16.67px !important;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .detail-inner .listRight li::marker {
@@ -3150,6 +3157,7 @@ a.page-link {
 .detail-inner .listRight {
   padding: 0 0 0 20px;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .detail-column {
@@ -4304,6 +4312,7 @@ a.page-link {
 
   .detail-inner p {
     font-size: 14.58px !important;
+    text-align: justify;
   }
 
   .socialaaps h5 {
