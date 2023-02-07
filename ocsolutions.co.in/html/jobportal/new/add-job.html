@@ -155,117 +155,148 @@
 <div class="row">
     <div class="col-xl-3">
         <!-- Profile picture card-->
-        <div class="card mb-2 mb-xl-1">
-            <div class="card-header">Profile Picture</div>
-            <div class="card-body text-center">
-                <!-- Profile picture image-->
-                <img class="img-account-profile rounded-circle mb-2" src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="">
-                <!-- Profile picture help block-->
-                <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
-                <!-- Profile picture upload button-->
-                <button class="btn btn-primary" type="button">Upload Job Details</button>
-            </div>
-        </div>
+       
     </div>
     <div class="col-xl-8">
         <!-- Account details card-->
-        <div class="card mb-4">
+        <div class="card mb-8">
             <div class="card-header">Account Details</div>
             <div class="card-body">
                 <form>
                   <div class="mb-3">
-                    <label class="small mb-1" for="inputUsername">Job Title</label>
+                    <label class="small mb-1" for="inputUsername">Job Title :</label>
                     <input class="form-control" id="inputCompanyname" type="text" placeholder="Enter Job Title" value="job title">
                 </div>
                     <!-- Form Group (username)-->
                     <div class="mb-3">
-                        <label class="small mb-1" for="inputUsername">Job Summary</label>
+                        <label class="small mb-1" for="inputUsername">Job Summary :</label>
                         <input class="form-control" id="inputUsername" type="text" placeholder="Enter Job Summary" value="job summary">
                     </div>
                     <!-- Form Row-->
                     <div class="row gx-3 mb-3">
                         <!-- Form Group (first name)-->
                         <div class="col-md-6">
-                            <label class="small mb-1" for="inputFirstName">Upload Job details</label>
-                            <input class="form-control" id="inputFirstName" type="form" placeholder="Enter Job Details" value="job details">
+                            <label class="small mb-1" for="inputFirstName">Upload Job details :</label>
+                            <input class="form-control" id="inputFirstName" type="file" placeholder="Enter Job Details" value="job details">
                         </div>
                         <!-- Form Group (last name)-->
                         <div class="col-md-6">
-                            <label class="small mb-1" for="inputLastName">Job Details</label>
+                            <label class="small mb-1" for="inputLastName">Job Details :</label>
                             <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" value="job details">
                         </div>
                     </div>
+                    <h2>MATCHING CRITERIA</h2>
                     <!-- Form Row        -->
                     <div class="row gx-3 mb-3">
                         <!-- Form Group (organization name)-->
                         <div class="col-md-6">
-                            <label class="small mb-1" for="inputOrgName">Key Skills</label>
+                            <label class="small mb-1" for="inputOrgName">Key Skills :</label>
                             <input class="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name" value="Start Bootstrap">
                         </div>
                         <!-- Form Group (location)-->
                         <div class="col-md-6">
-                            <label class="small mb-1" for="inputLocation">Location</label>
+                            <label class="small mb-1" for="inputLocation">Location :</label>
                             <input class="form-control" id="inputLocation" type="text" placeholder="Enter your location" value="San Francisco, CA">
                         </div>
                     </div>
                     <div class="row gx-3 mb-3">
                         <!-- Form Group (organization name)-->
                         <div class="col-md-6">
-                            <label class="small mb-1" for="inputOrgName">Role/Designation</label>
+                            <label class="small mb-1" for="inputOrgName">Role/Designation :</label>
                             <input class="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name" value="Start Bootstrap">
                         </div>
                         <!-- Form Group (location)-->
                         <div class="col-md-6">
-                            <label class="small mb-1" for="inputLocation">Qulaification</label>
+                            <label class="small mb-1" for="inputLocation">Qulaification :</label>
                             <input class="form-control" id="inputLocation" type="text" placeholder="Enter your location" value="San Francisco, CA">
                         </div>
                     </div>
                     <!-- Form Group (email address)-->
                     <div class="mb-3">
-                      <label class="small mb-1" for="inputEmailAddress">Salary</label>
-                      <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter company email address" value="name@example.com">
-                  </div>
+                      <label class="small mb-1" for="inputEmailAddress">Salary :</label>
+                      <!-- <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter company email address" value="name@example.com"> -->
+                      <select multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
 
                     <div class="mb-3">
-                        <label class="small mb-1" for="inputEmailAddress">Indrustries</label>
+                        <label class="small mb-1" for="inputEmailAddress">Indrustries :</label>
                         <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" value="name@example.com">
                     </div>
                     <!-- Form Row-->
                     <div class="row gx-3 mb-3">
                         <!-- Form Group (phone number)-->
                         <div class="col-md-12">
-                            <label class="small mb-1" for="inputPhone">Required Employee</label>
-                            <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" value="name@example.com">
+                            <label class="small mb-1" for="inputPhone">Required Employee :</label>
+                            <!-- <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" value="name@example.com"> -->
+                            <select multiple class="form-control" id="exampleFormControlSelect2">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
                         </div>
                         <!-- Form Group (birthday)-->
                     </div>
                     <div class="row gx-3 mb-3">
                         <!-- Form Group (organization name)-->
                         <div class="col-md-6">
-                            <label class="small mb-1" for="inputOrgName">Qualification</label>
+                            <label class="small mb-1" for="inputOrgName">Qualification :</label>
                             <input class="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name" value="Start Bootstrap">
                         </div>
                         <!-- Form Group (location)-->
                         <div class="col-md-6">
-                            <label class="small mb-1" for="inputLocation">Specilaization</label>
-                            <input class="form-control" id="inputLocation" type="text" placeholder="Enter your location" value="San Francisco, CA">
+                            <label class="small mb-1" for="inputLocation">Specilaization :</label>
+                            <!-- <input class="form-control" id="inputLocation" type="text" placeholder="Enter your location" value="San Francisco, CA"> -->
+                            <select multiple class="form-control" id="exampleFormControlSelect2">
+                                <option>-specilization-</option>
+                              </select>
                         </div>
                     </div>
                     <div class="row gx-3 mb-3">
                         <!-- Form Group (organization name)-->
                         <div class="col-md-6">
-                            <label class="small mb-1" for="inputOrgName">Experience(in years)</label>
-                            <input class="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name" value="Start Bootstrap">
+                            <label class="small mb-1" for="inputOrgName">Experience(in years) :</label>
+                            <!-- <input class="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name" value="Start Bootstrap"> -->
+                            <select multiple class="form-control" id="exampleFormControlSelect2">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
                         </div>
                         <!-- Form Group (location)-->
                         <div class="col-md-6">
-                            <label class="small mb-1" for="inputLocation">Functional Area</label>
+                            <label class="small mb-1" for="inputLocation">Functional Area :</label>
                             <input class="form-control" id="inputLocation" type="text" placeholder="Enter your location" value="San Francisco, CA">
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="small mb-1" for="inputEmailAddress">Nationality</label>
-                        <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter company email address" value="name@example.com">
+                        <label class="small mb-1" for="inputEmailAddress">Nationality :</label>
+                        <!-- <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter company email address" value="name@example.com"> -->
+                        <select multiple class="form-control" id="exampleFormControlSelect2">
+                            <option>Indian</option>
+                        </select>
+                    </div>
+
+                    <h2>SCHEDULE JOB</h2>
+                    <div class="row gx-3 mb-3">
+                        <!-- Form Group (organization name)-->
+                        <div class="col-md-6">
+                            <label class="small mb-1" for="inputOrgName">Live From :</label>
+                            <input class="form-control" id="inputOrgName" type="date" placeholder="Enter your organization name" value="Start Bootstrap">
+                        </div>
+                        <!-- Form Group (location)-->
+                        <div class="col-md-6">To :</label>
+                            <input class="form-control" id="inputLocation" type="date" placeholder="Enter your location" value="San Francisco, CA">
+                        </div>
                     </div>
                     <!-- Save changes button-->
                     <button class="btn btn-primary" type="button">Save changes</button>
@@ -275,7 +306,6 @@
     </div>
 </div>
 
-           
             
             <!-- <div class="py-5">
                 <div class="form-group row">
@@ -403,7 +433,7 @@
         <!-- </form> -->
         <!-- /. Protfolio -->
     </div>
-</div> -->
+</div>
 
 <!-- <div class="intro">
     <div class="way-success"></div>
@@ -418,9 +448,9 @@
           d="M 250 180.5 c -53.85 0 -135.344 -30.044 -250 -165.633 V 262 h 500 V 15.867 C 405.344 180.456 280.85 180.5 250 180.5 Z" />
       </svg>
     </span>
-  </div> -->
+  </div> -->  
 
-  <footer id="footer">
+  <footer id="footer" style="margin-top: 20px">
     <!--<svg viewBox="0 0 1440 250">
       <path fill="#fff" fill-opacity="1" d="M0,96L120,122.7C240,149,480,203,720,202.7C960,203,1200,149,1320,122.7L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
     </svg>-->
@@ -445,7 +475,7 @@
             <ul class="list-unstyled">
               <li><a href="about-us.html">About Us</a></li>
               <li><a href="contact-us.html">Contact Us</a></li>
-                            <li><a href="latest-news.html">Services</a></li>
+              <li><a href="latest-news.html">Services</a></li>
               <li><a href="#">News & Blog </a></li>
               <li><a href="#">Our features</a></li>
             </ul>
