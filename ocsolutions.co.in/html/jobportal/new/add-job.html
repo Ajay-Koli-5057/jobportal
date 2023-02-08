@@ -158,6 +158,94 @@
                     <label class="form-control-placeholder" for="industries">Industries</label>
                     <input type="text" name="industries" id="industries" class="form-control" value="" required placeholder="Enter text you want to add"> 
                 </div>
+                <div id="accordion">
+                      <h5 class="mb-0">
+                        <img 
+                          class="searchImage" 
+                          data-toggle="collapse" 
+                          data-target="#collapseOne" 
+                          aria-expanded="true" 
+                          aria-controls="collapseOne" 
+                          src="assets/images/searchIcon.png"
+                          alt="search"
+                          />
+                        
+                      </h5>
+                    <!-- </div> -->
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card mb-8">
+                      <div class="card-body">
+                        <form>
+                          <div class="row gx-3 mb-3">
+                              <!-- Form Group (first name)-->
+                              <div class="col-md-3">
+                                  <label class="small mb-1" for="inputFirstName">Functional Area :</label>
+                                  <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" value="">
+                              </div>
+                              <!-- Form Group (last name)-->
+                              <div class="col-md-3">
+                                  <label class="small mb-1" for="inputLastName">Key Skill :</label>
+                                  <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" value="">
+                              </div>
+                              <div class="col-md-3">
+                                <label class="small mb-1" for="inputOrgName">Companies :</label>
+                                <input class="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name" value="">
+                            </div>
+                          </div>
+                          <!-- Form Row        -->
+                          <b>Salary (in Lacs) :</b>
+                          <div class="row gx-3 mb-3">
+                              <div class="col-md-6">
+                                  <label class="small mb-1" for="inputLocation">Minimum :</label>
+                                  <select multiple class="form-control" id="exampleFormControlSelect2">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                              </div>
+                              <div class="col-md-6">
+                                <label class="small mb-1" for="inputLocation">Maximum :</label>
+                                <select multiple class="form-control" id="exampleFormControlSelect2">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                            </div>
+                          </div>
+                          <b>Experience (in years) :</b>
+                          <div class="row gx-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputLocation">Minimum :</label>
+                                <select multiple class="form-control" id="exampleFormControlSelect2">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                              <label class="small mb-1" for="inputLocation">Minimum :</label>
+                              <select multiple class="form-control" id="exampleFormControlSelect2">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                          </div>
+                        </div>
+                      </form>
+                      </div>
+                    </div>
+                    </div>
+
+                </div>
                 <div class="col-sm-2 pt-2">
                     <label class="form-control-placeholder" for="submit"></label>
                     <input type="submit" name="inputsearch" id="input-search" class="btn btn-danger btn-block form-control" value="Search">
