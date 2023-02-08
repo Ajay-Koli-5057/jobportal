@@ -5479,3 +5479,10 @@ nav > div a.nav-item.nav-link:focus {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+
+img {
+  float: left;
+  border: 1px solid black;
+  margin: 5px 10px 10px 0px;
+}
