@@ -5486,3 +5486,17 @@ img {
   border: 1px solid black;
   margin: 5px 10px 10px 0px;
 }
+
+
+.searchImage {
+  background: url('../assets/images/searchIcon.png');
+  height: 71px;
+  width: 60px;
+  padding-top: 19px;
+}
+
+.searchImage :hover {
+  background-color: white;
+}
+
+
