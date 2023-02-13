@@ -137,29 +137,28 @@
       <center><h2>UPDATE COMPANY DETAILS</h2></center>
       <hr class="mt-2 mb-5">
       <div class="row">
-          <div class="col-xl-3">
-              <!-- Profile picture card-->
-              <div class="card mb-2 mb-xl-1">
-                  <div class="card-header">Profile Picture</div>
-                  <div class="card-body text-center">
-                      <!-- Profile picture image-->
-                      <img class="img-account-profile rounded-circle mb-2" src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="">
-                      <!-- Profile picture help block-->
-                      <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
-                      <!-- Profile picture upload button-->
-                      <button class="btn btn-primary" type="button">Upload Company Logo</button>
-                  </div>
-              </div>
+        <div class="col-xl-2">
+        </div>
+        <div class="col-xl-8">
+          <!-- Account details card-->
+          <div style="padding-left: 1200px">
+            <button class="btn btn-primary mb-4" type="button">Back</button>
           </div>
-          <div class="col-xl-8">
-              <!-- Account details card-->
-              <div class="card mb-4">
+          <div class="card mb-4">
                   <div class="card-header">Account Details</div>
                   <div class="card-body">
                       <form>
-                        <div class="mb-3">
-                          <label class="small mb-1" for="inputUsername">Company Name</label>
-                          <input class="form-control" id="inputCompanyname" type="text" placeholder="Enter Company name" value="company name">
+                        <div class="row gx-3 mb-3">
+                          <!-- Form Group (first name)-->
+                          <div class="col-md-6">
+                              <label class="small mb-1" for="inputFirstName">Company Name</label>
+                              <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" value="Valerie">
+                          </div>
+                          <!-- Form Group (last name)-->
+                          <div class="col-md-6">
+                              <label class="small mb-1" for="inputLastName">Company Logo</label>
+                              <input class="form-control" id="inputLastName" type="file" placeholder="Enter your last name" value="Luna">
+                          </div>
                       </div>
                           <!-- Form Group (username)-->
                           <div class="mb-3">
