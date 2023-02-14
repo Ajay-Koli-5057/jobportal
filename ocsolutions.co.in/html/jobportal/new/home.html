@@ -776,62 +776,8 @@
 	<script src="assets/js/popper.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 
-	<!-- More function here -->
-	<script>
-		$(document).ready(function () {
-			// Configure/customize these variables.
-			var showChar = 501;  // How many characters are shown by default
-			var ellipsestext = "....";
-			var moretext = "More";
-			var lesstext = "More less";
 
-			$('.more').each(function () {
-				var content = $(this).html();
-
-				if (content.length > showChar) {
-
-					var c = content.substr(0, showChar);
-					var h = content.substr(showChar, content.length - showChar);
-
-					var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
-
-					$(this).html(html);
-				}
-			});
-
-			$(".morelink").click(function () {
-				if ($(this).hasClass("less")) {
-					$(this).removeClass("less");
-					$(this).html(moretext);
-				} else {
-					$(this).addClass("less");
-					$(this).html(lesstext);
-				}
-				$(this).parent().prev().slideToggle();
-				$(this).prev().slideToggle();
-				return false;
-			});
-		});
-	</script>
-
-	<!-- Popover function here -->
-	<script>
-		$(document).ready(function () {
-			$('[data-toggle="popover"]').popover({
-				trigger: 'hover',
-				html: true,
-			})
-		});
-	</script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-B8CM7T1B0K"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'G-B8CM7T1B0K');
-	</script>
 </body>
 
 <!-- Mirrored from ocsolutions.co.in/html/jobportal/new/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Jan 2023 06:03:59 GMT -->
